@@ -19,15 +19,25 @@
 
 // console.log(fullName)
 
-function myMap(arr, cal) {
-  let result = [];
+// function myMap(arr, callback) {
+//   let result = [];
   
-  for (let i = 0; i < arr.length; i++) {
-    result.push(cal(arr[i], i));
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     result.push(callback(arr[i], i));
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-// test
-console.log(myMap([1,2,3], x => x * 2)); // [2,4,6]
+// // test
+// console.log(myMap([1,2,3], x => x * 2)); // [2,4,6]
+
+
+console.log(typeof "Hello");   // string
+console.log(typeof 10);        // number
+console.log(typeof true);      // boolean
+console.log(typeof undefined); // undefined
+console.log(typeof null);      // object (JavaScript bug)
+console.log(typeof [1,2,3]);   // object
+console.log(typeof {});        // object
+console.log(typeof function(){}); // function
